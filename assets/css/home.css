@@ -1,0 +1,116 @@
+form#book-form{
+    background: #f7f7f7;
+    padding: 20px;
+    min-height: 280px;
+}
+form#book-form .btn-main{
+    background: #a40432;
+    border: 2px dotted #b71c1c;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.form-book .link {
+    color: #a40432;
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+.form-book h4{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.list-content .title-list{
+	background-color: rgba(0,160,61,1);
+	padding: 15px 30px;
+}
+.list-content .title-list>span{
+	color: #fff;
+}
+.list-content .title-list .view-all{
+	float:right;
+	margin-top: -5px;
+}
+.list-content .list-item{
+	border: 1px solid rgb(208, 208, 208);
+    background: #f5f5f5;
+    padding: 4px;
+    position: relative;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+.list-content .list-item a img{
+	width: 100%;
+}
+.list-content .list-item .info-item{
+	text-align: left;
+}
+.list-content .list-item .info-item h5{
+	text-align: center;
+	font-size: 15px;
+    min-height: 32px;
+}
+.list-content .list-item .info-item h5 a{
+	text-transform: uppercase;
+	color: #000;
+}
+.list-content .list-item .info-item h5 a:hover{
+	color: #ff5400;
+	text-decoration: none;
+}
+.list-content .list-item .row-info{
+	padding: 2px 0px;
+}
+.list-content .list-item .lb_info{
+	width: 32px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: #c30404;
+    text-transform: initial;
+}
+.list-content .list-item span.vl_info{
+	font-size: 12px;
+	color: #333;
+    padding-left: 0px;
+    text-transform: initial;
+}
+.list-content .list-item .row_book{
+	position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.list-content .list-item .btn_book_now{
+	color: #fff;
+    background: #ff5400;
+    height: 32px;
+    font-weight: bold;
+    border: none;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1);
+    padding: 0px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    outline: none;
+}
+.list-content .list-item .btn_book_now:hover{
+	background: #a40432;
+}
+.list-content .title-list{
+	margin-top: 20px;
+}
+#book-form label.error{
+    color:red;  
+    position:relative; 
+    display:block; 
+    text-align: left;
+}
+.carousel-inner>.item>img{
+    width: 100%;
+}

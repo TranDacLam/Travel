@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Bootstrap Example</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  	<link href="assets/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
+  	<link rel="stylesheet" href="assets/css/style.css">
+  	<link rel="stylesheet" href="assets/css/home.css">
+  	<link rel="stylesheet" href="assets/css/responsive-custom.css">
+
+  	<script type='text/javascript' src="assets/js/jquery-2.1.1.min.js"></script>
+  	<script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+  	<script type='text/javascript' src="assets/js/jquery.validate.min.js"></script>
+  	<script type='text/javascript' src="assets/js/moment-with-locales.js"></script>
+  	<script type='text/javascript' src="assets/js/bootstrap-datetimepicker.min.js"></script>
+  	<script type='text/javascript' src="assets/js/home.js"></script>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<div class="container header-top">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 logo">
+						<img src="assets/image/logo.png" alt="Travel" />
+					</div>
+					<div class="col-xs-4 col-sm-3 contact-header text-center rps-contact">
+						<div class="contact-content">
+							<span><i class="fa fa-phone"></i> Support 24/7</span>
+							<span class="number">
+								<a href="tel:+84 917126661" data-wpel-link="internal">+84 917126661</a>
+							</span>
+						</div>
+						<div>
+							<a href="#" data-wpel-link="internal">
+								<img src="assets/image/phone.png" />
+							</a>
+							<a href="#" data-wpel-link="internal">
+								<img src="assets/image/imessage.png" />
+							</a>
+							<a href="#" data-wpel-link="internal">
+								<img src="assets/image/viber.png" />
+							</a>
+							<a href="#" data-wpel-link="internal">
+								<img src="assets/image/line.png" />
+							</a>
+							<a href="#" data-wpel-link="internal">
+								<img src="assets/image/Kakao_Talk.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-3 phone-header text-center rsp-phone">
+						<div class="phone-content">
+							<span><i class="fa fa-envelope-o"></i> Email:</span>
+							<span class="number">
+								<a href="tel:+84 917126661" data-wpel-link="internal">hotro@travel.com</a>
+							</span>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-3 search rsp-search">
+						<form id="searchform" method="get" action="">
+							<input type="search" placeholder="Search entire site here" name="s" id="search"> 
+							<input type="submit" id="searchsubmit" value="" name="searchsubmit">
+						</form>
+						<span>
+							<img src="assets/image/Vietnam.png" alt="Viet Nam" width="25px" style="float:left">
+							<img src="assets/image/Denmark.png" alt="Denmark" width="25px">
+						</span>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-inverse header-bottom" data-spy="affix" data-offset-top="130">
+				<div class="container">
+					<div class="navbar-header">
+					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>                        
+					    </button>
+					    <a class="navbar-brand" href="#">
+					    	<span>MENU</span>
+					    	<img src="assets/image/logo.png" alt="Travel" />
+					    </a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+					    <ul class="nav navbar-nav">
+					        <li class="active"><a href="#myPage">HOME</a></li>
+					        <li><a href="#band">ABOUT US</a></li>
+					        <li class="dropdown">
+					          	<a>TOURS
+					          	<span class="caret"></span></a>
+					          	<ul class="dropdown-menu dropdown-content">
+					            	<li><a href="#">DA NANG</a></li>
+					            	<li><a href="#">HOI AN</a></li>
+					            	<li><a href="#">HUE</a></li> 
+					          	</ul>
+					        </li>
+					        <li><a href="#tour">PRICING</a></li>
+					        <li><a href="#blog">BLOG</a></li>
+					        <li><a href="#contact">CONTACT</a></li>
+					    </ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="container-fluid">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      	<li data-target="#myCarousel" data-slide-to="1"></li>
+		      	<li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		      	<div class="item active">
+			        <img src="assets/image/slide1.png" alt="New York" width="1200" height="700">     
+		      	</div>
+		      	<div class="item">
+			        <img src="assets/image/slide2.png" alt="Chicago" width="1200" height="700">    
+		      	</div>
+		      	<div class="item">
+			        <img src="assets/image/slide1.png" alt="Los Angeles" width="1200" height="700">     
+		      	</div>
+		    </div>
+
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		      	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      	<span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		      	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      	<span class="sr-only">Next</span>
+		    </a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="booking-form-home">
+			  	<form class="form-book" id="book-form" novalidate="novalidate">
+			        <div class="row">
+			        	<div class="col-xs-12 col-sm-12 text-center">
+			        		<h4>BOOK YOUR CAR</h4>
+			        	</div>
+			            <div class="col-xs-12 col-sm-3">
+			                <div class="form-group">
+								<select class="form-control from-place" name="from_place">
+									<option value="" selected="" disabled="">From</option>
+									<optgroup label="Hoi An">
+										<option value="1">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">Hoi An</font>
+											</font>
+										</option>
+										<option value="2">My Son Sanctuary</option>
+										<option value="21">Marble Mountain and Hoi An</option>
+									</optgroup>
+									<optgroup label="Da Nang">
+										<option value="3">Da Nang Train Station</option>
+										<option value="4">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">Da Nang Airport (DAN)</font>
+											</font>
+										</option>
+										<option value="6">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">Da Nang center
+												</font>
+											</font>
+										</option>
+										<option value="7">Marble Mountain (2 way)</option>
+										<option value="8">Ba Na Hills Station (2 way)
+										</option>
+										<option value="19">Marble Mountain and Da Nang Train Station
+										</option>
+										<option value="20">Marble Mountain and Da Nang Airport (DAN)
+										</option>
+										<option value="23">Ba Na Hills Station (1 way)
+										</option>
+									</optgroup>
+									<optgroup label="Hue">
+										<option value="22">Hue City Tour
+										</option>
+										<option value="10">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">Hue Airport (HUI) 
+												</font>
+											</font>
+										</option>
+										<option value="18">Hue Center
+										</option>
+									</optgroup>														
+								</select>
+							</div>
+			            </div>
+
+			            <div class="col-xs-12 col-sm-3">
+			                <div class="form-group">
+								<select class="form-control to-place" name="to_place">
+									<option value="" selected="" disabled="">To</option>
+									<optgroup label="Hoi An">
+											<option value="1">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">Hoi An</font>
+												</font>
+											</option>
+											<option value="2">My Son Sanctuary</option>
+											<option value="21">Marble Mountain and Hoi An</option>
+										</optgroup>
+										<optgroup label="Da Nang">
+											<option value="3">Da Nang Train Station</option>
+											<option value="4">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">Da Nang Airport (DAN)</font>
+												</font>
+											</option>
+											<option value="6">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">Da Nang center
+													</font>
+												</font>
+											</option>
+											<option value="7">Marble Mountain (2 way)</option>
+											<option value="8">Ba Na Hills Station (2 way)
+											</option>
+											<option value="19">Marble Mountain and Da Nang Train Station
+											</option>
+											<option value="20">Marble Mountain and Da Nang Airport (DAN)
+											</option>
+											<option value="23">Ba Na Hills Station (1 way)
+											</option>
+										</optgroup>
+										<optgroup label="Hue">
+											<option value="22">Hue City Tour
+											</option>
+											<option value="10">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">Hue Airport (HUI) 
+													</font>
+												</font>
+											</option>
+											<option value="18">Hue Center
+											</option>
+										</optgroup>													
+								</select>
+							</div>
+			            </div>
+			            <div class="col-xs-12 col-sm-3">
+			                <div class="form-group">
+			                    <input type="text" class="form-control" placeholder="Full name" name="fullname">
+			                </div>
+			            </div>
+			            <div class="col-xs-12 col-sm-3">
+			                <div class="form-group">
+			                    <input type="number" class="form-control" placeholder="Number phone" name="phone">
+			                </div>
+			            </div>
+			            <div class="col-xs-12 col-sm-6">
+			                <div class="row">
+			                    <div class="col-xs-12 col-sm-6">
+			                        <div class="form-group">
+						                <div class='input-group date' id='booking-date'>
+						                    <input type='text' class="form-control" placeholder="Date" name="date"/>
+						                    <span class="input-group-addon">
+						                        <span class="glyphicon glyphicon-calendar"></span>
+						                    </span>
+						                </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-xs-12 col-sm-6">
+			                        <div class="form-group">
+			                            <div class='input-group date' id='booking-time'>
+						                    <input type='text' class="form-control" placeholder="Time" name="time"/>
+						                    <span class="input-group-addon">
+						                        <span class="glyphicon glyphicon-calendar"></span>
+						                    </span>
+						                </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="col-xs-12 col-sm-3">
+			                <div class="form-group">
+			                    <select name="car_type" class="form-control">
+			                        <option value="">Select car type</option>
+			                        <option value="16 Chỗ">16 Seat</option>
+			                        <option value="4 Chỗ">4 Seat</option>
+			                        <option value="7 Chỗ">7 Seat</option>
+			                    </select>
+			                </div>
+			            </div>
+			            <div class="col-xs-12 col-sm-3">
+			                <div class="form-group">
+			                    <input type="text" name="travel_code" placeholder="Code Airport/Train" class="form-control">
+			                </div>
+			            </div>
+			        </div>
+			        <div class="text-center">
+			            <button type="submit" class="btn-main">Book now <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+			            <p class="link">Pick up from Hoi An airport/train must be 2 hours before the time written on the ticket</p>
+			        </div>
+			    </form> 
+			</div>
+			<div class="list-content">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="well well-sm title-list"><span>HUE PRIVATE CARS VIEW ALL</span>
+							<a type="button" class="btn btn-default btn-sm view-all">
+          						<span class="glyphicon glyphicon-th-list"></span> View all
+        					</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/hue.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">HOI AN TO DA NANG BY PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Hoi An - Da Nang
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/danang.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">HOI AN TO HUE PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Da Nang - Hai Van pass - Lang Co Bay - Elephant spring - Hue
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/hue.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">HOI AN TO MY SON BY PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Hoi An - My Son - Thanh Ha pottery village
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/hoian.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">HOI AN TO MY SON BY PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Hoi An - My Son - Thanh Ha pottery village
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="list-content">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="well well-sm title-list"><span>DA NANG PRIVATE CARS</span>
+							<a type="button" class="btn btn-default btn-sm view-all">
+          						<span class="glyphicon glyphicon-th-list"></span> View all
+        					</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/dn1.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">DA NANG AIRPORT TO HUE BY CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Da Nang airport - Hue
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/dn2.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">DA NANG PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Da Nang, Hoi An, Hue, My son
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/dn3.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">DA NANG TO BA NA HILL BY PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											 Da Nang - Ba Na - Da Nang
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/dn4.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">DA NANG TO HUE BY PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											 Da Nang - Hai Van pass - Lang co bay - Hue
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="list-content">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="well well-sm title-list"><span>PHONG NHA PRIVATE CAR</span>
+							<a type="button" class="btn btn-default btn-sm view-all">
+          						<span class="glyphicon glyphicon-th-list"></span> View all
+        					</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/phongnha1.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">PHONG NHA PRIVATE CARS</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Hotel - Phong Nha cave - paradise cave - Dark cave - Hotel
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/phongnha2.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">PHONG NHA TO DMZ BY PRIVATE CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											Phong Nha - DMZ - Hue, Dong Ha, Dong Hoi or Phong Nha
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/phongnha3.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">PHONG NHA TO DONG HOI BY CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											 Phong Nha - Dong Hoi
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="list-item">
+							<div>
+								<a href="#"><img src="assets/image/phongnha4.jpg" alt=""/></a>
+							</div>
+							<div class="info-item">
+								<h5>
+									<a href="#">PHONG NHA TO HUE BY CAR</a>
+								</h5>
+								<div class="info-content">
+									<div class="row-info"> 
+										<span class="lb_info">
+											 <i class="fa fa-map-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											40 - 70 km
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											1 - 5 hours
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-money" aria-hidden="true"></i>
+										</span>
+										<span class="vl_info">
+											19 usd
+										</span>
+									</div>
+									<div class="row_info"> 
+										<span class="lb_info">
+											<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+										</span>
+										<span class="vl_info">
+											 Phong Nha - Hue, Phong Nha - DMZ - Hue
+										</span>
+									</div>
+									<div class="row_book">	
+										<a href="#"><button class="btn btn_book_now">View Detail</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="wrap">
+			<div class="container footer-top">
+				<div class="col-xs-12 col-sm-4">
+					<div class="col-sm-12"><img src="assets/image/logo.png" alt="Travel" /></div>
+				</div>
+				<div class="col-xs-6 col-sm-4 info-footer">
+                    <h4>WHY YOU SHOULD CHOOSE US?</h4>
+                    <ul>
+                    	<li>SECURE AND SAFE</li>
+                    	<li>THE CHEAPEST</li>
+                    	<li>QUICK AND FAULT</li>
+                    </ul>
+                </div>
+				<div class="col-xs-6 col-sm-4 info-footer">
+                    <div class="col-sm-12 text-center">
+                    	<h4>CONTACT INFO</h4>
+						<i class="fa fa-location-arrow"></i> 244 Cửa Đại, Phuờng Cẩm Châu, Tp.Hội An, Quảng Nam
+						<p class="hotline">HOTLINE: 1900 1234 <br>
+						EMAIL: hotro@travel.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+		        <div class="container text-center">
+		            <div class="row">
+		                <div class="col-sm-12 col-xs-12 socical-footer">
+		                    <ul>
+		                        <li>
+		                            <a href="#"><i class="fa fa-youtube"></i></a>
+		                        </li>
+		                        <li>
+		                            <a href="#"><i class="fa fa-facebook"></i></a>
+		                        </li>
+		                        <li>
+		                            <a href="#"><i class="fa fa-google-plus"></i></a>
+		                        </li>
+		                    </ul>
+		                </div>
+		                <div class="col-sm-12 col-xs-12 copyright-bottom">
+		                	© 2017 - Travel
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</footer>
+</body>
+</html>

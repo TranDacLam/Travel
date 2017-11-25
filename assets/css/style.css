@@ -1,0 +1,228 @@
+body{
+    font-family: Montserrat;
+}
+.wrap, .main{
+	width: 100%;
+}
+
+/* HEADER */
+header .logo{
+	padding: 15px 0;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    background-color: #fff;
+}
+.navbar-inverse{
+    background-color: #fff;
+    border: none;
+}
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #ff5400;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #3e3e3e;
+}
+.contact-header, .phone-header{
+    position: relative;
+    margin: 40px 0 10px 0;
+    padding: 0 0 0 37px;
+}
+.contact-header span, .phone-header span{
+	width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    color: #999;
+}
+.contact-header span.number, 
+.phone-header span.number{
+	color: #0032B0;
+    outline: none;
+}
+.contact-header span.number a, 
+.phone-header span.number a{
+    color: #000;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+.header-top .phone-content span i, 
+.header-top .contact-content span i{
+    color: black;
+}
+header .search{
+    margin-top: 45px;
+}
+header input[type="search"]{
+	border: 1px solid #ccc;
+    font: normal 12px 'OpenSansRegular';
+    color: #000;
+    padding: 6px 10px;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+}
+header .search > span{
+    float:right; 
+    margin-top:10px;
+}
+header input[type="search"]:focus{
+	border-color: #ffa700;
+}
+header .search input[type="submit"]{
+	background: url(../../assets/image/icons2.png) 5px -33px no-repeat;
+    border: none;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 0;
+    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 18px;
+}
+.header-bottom{
+	width: 100%;
+	border-top: 2px solid #cdc197;
+}
+.header-bottom a{
+	color: #3e3e3e;
+}
+.navbar-header .navbar-brand img{
+    margin-top: -17px;
+    width: 50%;
+    display: none;
+}
+.header-bottom .navbar-brand span{
+    display: none;
+}
+.affix .navbar-header .navbar-brand img{
+    display: block;
+}
+.header-bottom .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.header-bottom .navbar-collapse {
+  text-align: center;
+}
+.header-bottom .navbar-nav .dropdown li{
+	border-bottom: 1px solid #ededed;
+	height: 30px;
+}
+.header-bottom .dropdown-content>li>a{
+    color: #666;
+    font-size: 13px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-top: 2px solid #f7941d;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.header-bottom .navbar-nav .dropdown li:hover a{
+	color: #ff5400;
+}
+/* END HEADER */
+
+/* FOOTER */
+footer{
+	padding-top: 25px;
+	margin-top: 50px;
+	background-color: #333;
+	color: #fff;
+}
+.socical-footer{
+    margin-top: 10px;
+}
+.socical-footer .fa-youtube{
+	background: #E62117;
+	padding: 10px;
+    font-size: 22px;
+    border-radius: 50%;
+    width: 42px;
+    text-align: center;
+    color: #fff;
+}
+.socical-footer .fa-facebook{
+	background: #3B5998;
+	padding: 10px;
+    font-size: 22px;
+    border-radius: 50%;
+    width: 42px;
+    text-align: center;
+    color: #fff;
+}
+.socical-footer .fa-google-plus{
+    background: #d14836;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 50%;
+    width: 42px;
+    text-align: center;
+    color: #fff;
+}
+.socical-footer ul li{
+	margin: 0px 5px;
+    list-style: none;
+    display: inline;
+}
+.socical-footer ul{
+	margin-top: 5px;
+    padding-left: 0px;
+}
+.copyright .container{
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+.copyright-bottom{
+    margin-bottom: 25px;
+    margin-top: 5px;
+    color: #8c8c8c;
+}
+.footer-top{
+    margin-bottom: 30px;
+}
+.footer-top img{
+    width: 70%;
+}
+.footer-top .hotline{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.info-footer h4{
+    font-family: 'Times New Roman';
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+.info-footer ul li{
+    margin-bottom: 5px;
+    font-size: 13px; 
+}
+/* END FOOTER */
+
+/* Custom Placeholder */
+.form-control::-webkit-input-placeholder { 
+    color: #555;
+}  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { 
+    color: #555; 
+}  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { 
+    color: #555;
+}  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { 
+    color: #555;
+}  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { 
+    color: #555;
+}

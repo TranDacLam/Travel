@@ -1,0 +1,89 @@
+/* Responsive */
+/* HOME, HEADER, FOOTER */
+@media only screen and (max-width: 736px){
+    .header-top .logo{
+        text-align: center;
+    }
+    .dropdown:hover .dropdown-content {
+       display: block
+    }
+    .header-bottom .navbar-brand span{
+        display: block;
+        color: #000;
+        font-weight: bold;
+    }
+    .affix .navbar-header .navbar-brand span{
+        display: none;
+    }
+    .navbar-toggle{
+        background-color: #000;
+    }
+    .list-content .list-item{
+        min-height: 410px;
+    }
+    .footer-top img{
+        width: 40%;
+    }
+    .footer-top .col-xs-12{
+        text-align: center;
+    }
+    .info-footer h4{
+        line-height: 25px;
+        min-height: 50px;
+    }
+}
+@media only screen and (max-width: 568px){
+    .list-content .list-item{
+        min-height: 385px;
+    }
+}
+@media only screen and (max-width: 414px){
+    .header-top .rps-contact, 
+    .header-top .rsp-phone, 
+    .header-top .rsp-search{
+        width: 100%;
+    }
+    .header-top .contact-header, 
+    .header-top .phone-header{
+        margin-top: 10px;
+        padding-left: 0;
+    }
+    header .search {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .list-content .list-item{
+        min-height: 355px;
+    }
+    .list-content .title-list{
+        padding: 15px 5px;
+    }
+    .list-content .list-item .info-item h5, .btn{
+        font-size: 13px;
+    }
+    footer .info-footer h4{
+        text-align: center;
+    }
+    footer .info-footer h4{
+        font-size: 15px;
+        min-height: 0;
+    }
+}
+@media only screen and (max-width: 375px){
+    .list-content .list-item .btn_book_now{
+        height: 25px;
+        padding: 0px 10px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .list-content .title-list>span{
+        font-size: 12px;
+    }
+    .list-content .title-list .view-all{
+        margin-top: -3px;
+    }
+    .btn-group-sm>.btn, .btn-sm{
+        padding: 3px 5px;
+    }
+}
+/* END HOME, HEADER, FOOTER */
