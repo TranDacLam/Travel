@@ -1,0 +1,79 @@
+.detail form#book-form{
+    background: #f7f7f7;
+    padding: 20px;
+    min-height: 280px;
+}
+.detail form#book-form .btn-main{
+    background: #a40432;
+    border: 2px dotted #b71c1c;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.detail{
+    margin-top: 50px;
+}
+.detail .detail-title{
+    height: 50px;
+    border-bottom: 2px solid;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.detail .header-detail{
+    margin: 10px 0 20px 0;
+}
+.detail .img-detail img{
+    width: 100%;
+}
+.detail .div_overview_row {
+    padding: 4px 0px;
+    line-height: 20px;
+}
+.detail .div_overview_row div.overview_icon {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+}
+.detail .overview_icon i{
+    color: red;
+}
+.detail .div_overview_row span.t_tile {
+    font-weight: bold;
+    width: 80px;
+    display: -webkit-inline-box;
+    display: inline-block;
+}
+.detail .border-middle{
+    border-top: 1px solid #ddd;
+    margin-top: -30px;
+}
+.detail .rps-book-now{
+    background: #a40432;
+    border: 2px dotted #b71c1c;
+    color: white;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: -10px;
+    font-size: 14px;
+}
+.detail .rps-btn-booknow{
+    display: none;        
+}
+.detail textarea.form-control{
+    height: 100px;
+}
+.detail #book-form label.error{
+    color:red;  
+    position:relative; 
+    display:block; 
+    text-align: left;
+    font-size: 13px;
+}
+.detail .content-detail img{
+    width: 100%;
+}

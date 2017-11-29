@@ -1,9 +1,9 @@
-form#book-form{
+.booking-form-home form#book-form{
     background: #f7f7f7;
     padding: 20px;
     min-height: 280px;
 }
-form#book-form .btn-main{
+.booking-form-home form#book-form .btn-main{
     background: #a40432;
     border: 2px dotted #b71c1c;
     color: white;
@@ -13,13 +13,13 @@ form#book-form .btn-main{
     font-weight: bold;
     margin-top: 10px;
 }
-.form-book .link {
+.booking-form-home .form-book .link {
     color: #a40432;
     display: block;
     margin-top: 10px;
     font-style: italic;
 }
-.form-book h4{
+.booking-form-home .form-book h4{
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -86,7 +86,8 @@ form#book-form .btn-main{
     text-align: center;
     padding: 10px 0px;
 }
-.list-content .list-item .btn_book_now{
+.list-content .list-item .btn_book_now,
+.list-content .list-item .btn_view_detail{
 	color: #fff;
     background: #ff5400;
     height: 32px;
@@ -98,18 +99,21 @@ form#book-form .btn-main{
     cursor: pointer;
     -webkit-appearance: button;
     outline: none;
+    width: 120px;
 }
-.list-content .list-item .btn_book_now:hover{
+.list-content .list-item .btn_book_now:hover,
+.list-content .list-item .btn_view_detail:hover{
 	background: #a40432;
 }
 .list-content .title-list{
 	margin-top: 20px;
 }
-#book-form label.error{
+.booking-form-home #book-form label.error{
     color:red;  
     position:relative; 
     display:block; 
     text-align: left;
+    font-size: 13px;
 }
 .carousel-inner>.item>img{
     width: 100%;

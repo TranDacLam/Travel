@@ -44,6 +44,9 @@ $(document).ready(function() {
 			},
 			travel_code: {
 				required : true,
+			},
+			email: {
+				required : true,
 			}
 		},
 		messages : {
@@ -70,6 +73,9 @@ $(document).ready(function() {
 			},
 			travel_code : {
 				required : "Code can not be empty",
+			},
+			email : {
+				required : "Email can not be empty",
 			}
 		}
 	});

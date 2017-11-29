@@ -1,5 +1,42 @@
-/* Responsive */
+ Responsive */
 /* HOME, HEADER, FOOTER */
+@media only screen and (max-width: 1024px){
+    .list-content .list-item .btn_view_detail{
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 768px){
+    /* HOME, HEADER, FOOTER */
+    .navbar-header .navbar-brand img{
+        width: 100%;
+    }
+    .header-bottom .navbar-header{
+        width: 20%;
+    }
+    .header-top .logo img{
+        width: 100%;
+    }
+    .contact-header, .phone-header{
+        padding: 0;
+    }
+    /* END HOME, HEADER, FOOTER */
+
+    /* DETAIL */
+    .detail .rps-btn-booknow{
+        display: block;
+    }
+    .detail .form-book-car{
+        margin-top: 30px;
+    }
+    .detail{
+        margin-top: 15px;
+    }
+    .detail .detail-title span:first-child{
+        float: left;
+        width: 80%;
+    }
+    /* END DETAIL */
+}
 @media only screen and (max-width: 736px){
     .header-top .logo{
         text-align: center;
@@ -19,7 +56,7 @@
         background-color: #000;
     }
     .list-content .list-item{
-        min-height: 410px;
+        min-height: 440px;
     }
     .footer-top img{
         width: 40%;
@@ -31,13 +68,26 @@
         line-height: 25px;
         min-height: 50px;
     }
+    .list-content .list-item .btn_view_detail{
+        margin-bottom: 0;
+    }
+    .header-top .logo img {
+        width: 30%;
+    }
+    .header-bottom .navbar-header{
+        width: auto;
+    }
+    .navbar-header .navbar-brand img{
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 568px){
     .list-content .list-item{
-        min-height: 385px;
+        min-height: 390px;
     }
 }
 @media only screen and (max-width: 414px){
+    /* HOME, HEADER, FOOTER */
     .header-top .rps-contact, 
     .header-top .rsp-phone, 
     .header-top .rsp-search{
@@ -53,7 +103,7 @@
         margin-bottom: 20px;
     }
     .list-content .list-item{
-        min-height: 355px;
+        min-height: 395px;
     }
     .list-content .title-list{
         padding: 15px 5px;
@@ -68,11 +118,45 @@
         font-size: 15px;
         min-height: 0;
     }
+    .list-content .list-item .btn_view_detail{
+        margin-bottom: 5px;
+    }
+    .list-content .list-item .btn_book_now, 
+    .list-content .list-item .btn_view_detail{
+        width: 112px;
+    }
+    .header-top .logo img{
+        width: 65%;
+    }
+    /* END HOME, HEADER, FOOTER */
+
+    /* DETAIL */
+    .detail .detail-title span:first-child{
+        width: 70%;
+    }
+    .detail .detail-title {
+        height: 60px;
+    }
+    .detail .rps-btn-booknow{
+        margin-top: 10px;
+    }
+    .detail .rps-book-now{
+        font-size: 11px;
+    }
+    .detail .header-detail{
+        width: 100%;
+    }
+    /* END DETAIL */
+
 }
 @media only screen and (max-width: 375px){
-    .list-content .list-item .btn_book_now{
+    .list-content .list-item .btn_book_now,
+    .list-content .list-item .btn_view_detail{
         height: 25px;
         padding: 0px 10px;
+    }
+    .list-content .list-item{
+        min-height: 375px;
     }
 }
 @media only screen and (max-width: 320px){
@@ -85,5 +169,14 @@
     .btn-group-sm>.btn, .btn-sm{
         padding: 3px 5px;
     }
+    .header-bottom .navbar-header .navbar-brand{
+        width: 80%;
+    }
+
+    /* DETAIL */
+    .detail .detail-title span:first-child{
+        font-size: 15px;
+    }
+    /* END DETAIL */
 }
-/* END HOME, HEADER, FOOTER */
+/* END HOME, HEADER, FOOTER 
